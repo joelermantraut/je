@@ -1,0 +1,22 @@
+$small: 500px
+$big: 1300px
+
+$small-width: 100%
+$medium-width: 80%
+$big-width: 60%
+
+body
+  display: flex
+  justify-content: center
+
+  width: 100%
+
+.container
+  @media (max-width: $small)
+    width: $small-width
+  @media (min-width: $small) and (max-width: $big)
+    width: $medium-width
+  @media (min-width: $big)
+    width: $big-width
+
+  text-align: left

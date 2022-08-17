@@ -1,0 +1,28 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.container {
+  text-align: left;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 500px) and (max-width: 1300px) {
+  .container {
+    width: 80%;
+  }
+}
+@media (min-width: 1300px) {
+  .container {
+    width: 60%;
+  }
+}
