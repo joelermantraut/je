@@ -1,15 +1,154 @@
-$small: 500px
-$big: 1300px
-
-$small-width: 100%
-$medium-width: 80%
-$big-width: 60%
+@import "_variables.sass"
 
 body
   display: flex
   justify-content: center
 
   width: 100%
+
+p
+  font-size: 0.75em
+
+  padding: 0.25em
+  margin: 0.25em 0
+
+h1
+  font-size: 1.5em
+  text-align: center
+
+  border-bottom: 5px solid black
+
+  padding: .25em
+
+h2
+  font-size: 1.3em
+  text-align: center
+
+  border-bottom: 3px solid #000
+  padding: 0.25em
+  margin: 0.25em 0
+
+h3
+  font-size: 1.2em
+
+  border-bottom: 2px solid #000
+  padding: 0.25em
+  margin: 0.25em 0
+
+h4
+  font-size: 1.1em
+
+  border-bottom: 2px solid #000
+  padding: 0.25em
+  margin: 0.25em 0
+
+h5
+  font-size: 1em
+
+  border-bottom: 1px solid #000
+  padding: 0.25em
+  margin: 0.25em 0
+
+ul
+  font-size: .75em
+
+  padding-left: 1.5em
+
+  li
+    list-style-image: url('../images/right-arrow.png')
+
+.divider
+  margin: .5em 0
+
+  display: flex
+  justify-content: center
+
+  .line
+    width: 95%
+
+    height: 1px
+
+    background: black
+
+    text-align: center
+
+.logo-field
+  background: yellow
+
+  display: flex
+  justify-content: center
+  align-items: center
+
+  h1
+    font-size: 3em
+
+    text-align: center
+
+    width: 100%
+
+    border: none
+
+  .name
+    h1
+      padding: 0
+
+.present
+  padding: 1em
+
+  line-height: normal
+
+  p
+    padding-left: 10px
+
+  .problem
+    display: flex
+    justify-content: center
+
+    padding: .75em
+    margin: .5em
+    border: 3px solid red
+
+    width: 40%
+
+    img
+      width: 1em
+      height: 1em
+
+      margin-left: 10px
+
+  .sliders
+    .slider-container
+      width: 100%
+
+      border: 1px solid black
+      border-radius: 10px
+
+    .skill-number
+      width: 90%
+
+      background: cyan
+
+      border-radius: 10px 0 0 10px
+
+  .detailed
+    text-align: justify
+
+    display: flex
+    flex-direction: column
+
+    p
+      margin-bottom: .25em
+
+    .paragraph
+      display: flex
+      align-items: center
+      justify-content: space-around
+
+      img
+        width: 3em
+
+      p
+        width: 80%
 
 .container
   @media (max-width: $small)

@@ -8,6 +8,158 @@ body {
   width: 100%;
 }
 
+p {
+  font-size: 0.75em;
+  padding: 0.25em;
+  margin: 0.25em 0;
+}
+
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+  border-bottom: 5px solid black;
+  padding: 0.25em;
+}
+
+h2 {
+  font-size: 1.3em;
+  text-align: center;
+  border-bottom: 3px solid #000;
+  padding: 0.25em;
+  margin: 0.25em 0;
+}
+
+h3 {
+  font-size: 1.2em;
+  border-bottom: 2px solid #000;
+  padding: 0.25em;
+  margin: 0.25em 0;
+}
+
+h4 {
+  font-size: 1.1em;
+  border-bottom: 2px solid #000;
+  padding: 0.25em;
+  margin: 0.25em 0;
+}
+
+h5 {
+  font-size: 1em;
+  border-bottom: 1px solid #000;
+  padding: 0.25em;
+  margin: 0.25em 0;
+}
+
+ul {
+  font-size: 0.75em;
+  padding-left: 1.5em;
+}
+ul li {
+  list-style-image: url("../images/right-arrow.png");
+}
+
+.divider {
+  margin: 0.5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.divider .line {
+  width: 95%;
+  height: 1px;
+  background: black;
+  text-align: center;
+}
+
+.logo-field {
+  background: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.logo-field h1 {
+  font-size: 3em;
+  text-align: center;
+  width: 100%;
+  border: none;
+}
+.logo-field .name h1 {
+  padding: 0;
+}
+
+.present {
+  padding: 1em;
+  line-height: normal;
+}
+.present p {
+  padding-left: 10px;
+}
+.present .problem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.75em;
+  margin: 0.5em;
+  border: 3px solid red;
+  width: 40%;
+}
+.present .problem img {
+  width: 1em;
+  height: 1em;
+  margin-left: 10px;
+}
+.present .sliders .slider-container {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.present .sliders .skill-number {
+  width: 90%;
+  background: cyan;
+  border-radius: 10px 0 0 10px;
+}
+.present .detailed {
+  text-align: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.present .detailed p {
+  margin-bottom: 0.25em;
+}
+.present .detailed .paragraph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.present .detailed .paragraph img {
+  width: 3em;
+}
+.present .detailed .paragraph p {
+  width: 80%;
+}
+
 .container {
   text-align: left;
 }
@@ -18,11 +170,11 @@ body {
 }
 @media (min-width: 500px) and (max-width: 1300px) {
   .container {
-    width: 80%;
+    width: 90%;
   }
 }
 @media (min-width: 1300px) {
   .container {
-    width: 60%;
+    width: 80%;
   }
 }
