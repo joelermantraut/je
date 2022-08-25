@@ -1,10 +1,21 @@
 @import "_variables.sass"
+@import "_colors.sass"
+@import "_media-queries.sass"
+
+.container
+  background: $background
+
+  color: white
+
+  padding: 1em
 
 body
   display: flex
   justify-content: center
 
   width: 100%
+
+  background: $back-background
 
 p
   font-size: 0.75em
@@ -16,7 +27,7 @@ h1
   font-size: 1.5em
   text-align: center
 
-  border-bottom: 5px solid black
+  border-bottom: 5px solid $border
 
   padding: .25em
 
@@ -24,38 +35,67 @@ h2
   font-size: 1.3em
   text-align: center
 
-  border-bottom: 3px solid #000
+  border-bottom: 3px solid $border
   padding: 0.25em
   margin: 0.25em 0
 
 h3
   font-size: 1.2em
 
-  border-bottom: 2px solid #000
+  border-bottom: 2px solid $border
   padding: 0.25em
   margin: 0.25em 0
 
 h4
   font-size: 1.1em
 
-  border-bottom: 2px solid #000
+  border-bottom: 2px solid $border
   padding: 0.25em
   margin: 0.25em 0
 
 h5
   font-size: 1em
 
-  border-bottom: 1px solid #000
+  border-bottom: 1px solid $border
   padding: 0.25em
   margin: 0.25em 0
 
 ul
   font-size: .75em
 
-  padding-left: 1.5em
+  li::before
+    content: 'u'
+    font-family: je
 
-  li
-    list-style-image: url('../images/right-arrow.png')
+*::before
+  position: relative
+  top: 0.2em
+
+  margin-right: 0.25em
+
+a
+  color: white
+  font-style: italic
+a:hover
+  text-decoration: underline
+
+input
+  outline: none
+  border: none
+input:focus, textarea:focus, select:focus
+  outline: none
+input[type="submit"]
+  background: white
+  color: black
+  outline: none
+
+footer
+  text-align: center
+  font-size: 0.75em
+  font-weight: bold
+
+  border-top: 1px solid $border
+  padding-top: 1em
 
 .divider
   margin: .5em 0
@@ -73,11 +113,13 @@ ul
     text-align: center
 
 .logo-field
-  background: yellow
-
   display: flex
   justify-content: center
   align-items: center
+
+  min-height: 100vh
+
+  border-bottom: 1px solid white
 
   h1
     font-size: 3em
@@ -88,9 +130,22 @@ ul
 
     border: none
 
+  .down
+    color: white
+    font-size: 1.5em
+
+    padding: 2em 0
+
   .name
+    border-right: 1px solid white
+
+    padding-right: 1em
+
     h1
       padding: 0
+
+  .menu
+    padding-left: 1em
 
 .present
   padding: 1em
@@ -100,13 +155,18 @@ ul
   p
     padding-left: 10px
 
+  .info
+    padding: .5em 0 0 .5em
+
+    font-size: 0.75em
+
   .problem
     display: flex
-    justify-content: center
 
-    padding: .75em
+    padding: 1em 0 .5em 1em
     margin: .5em
-    border: 3px solid red
+    border-bottom: 3px solid $border
+    border-radius: 0 0 0 20px
 
     width: 40%
 
@@ -114,21 +174,31 @@ ul
       width: 1em
       height: 1em
 
-      margin-left: 10px
+      position: relative
+      top: 0.25em
 
   .sliders
-    .slider-container
-      width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
 
-      border: 1px solid black
-      border-radius: 10px
+    .slider-container
+      width: 90%
+
+      border: 1px solid $border
+      border-radius: 5px
+
+      margin-bottom: 0.25em
 
     .skill-number
       width: 90%
 
       background: cyan
 
-      border-radius: 10px 0 0 10px
+      border-radius: 5px 0 0 5px
+      padding: 0.25em
+
+      font-size: 0.75em
 
   .detailed
     text-align: justify
@@ -150,12 +220,5 @@ ul
       p
         width: 80%
 
-.container
-  @media (max-width: $small)
-    width: $small-width
-  @media (min-width: $small) and (max-width: $big)
-    width: $medium-width
-  @media (min-width: $big)
-    width: $big-width
-
-  text-align: left
+.network
+  padding: .5em
