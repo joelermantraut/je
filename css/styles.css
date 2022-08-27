@@ -1,26 +1,74 @@
-.container {
-  text-align: left;
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 16px;
+  }
 }
-@media (max-width: 500px) {
+@media screen and (min-width: 700px) and (max-width: 1300px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  body {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 700px) {
   .container {
     width: 100%;
   }
 }
-@media (min-width: 500px) and (max-width: 1300px) {
+@media screen and (min-width: 700px) and (max-width: 1300px) {
   .container {
     width: 90%;
   }
 }
-@media (min-width: 1300px) {
+@media screen and (min-width: 1300px) {
   .container {
     width: 80%;
   }
 }
 
-.container {
-  background: steelblue;
-  color: white;
-  padding: 1em;
+@media screen and (max-width: 700px) {
+  .logo-field {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .logo-field .name, .logo-field .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .logo-field .menu {
+    margin: 1em;
+    padding: 1em;
+    border-top: 1px solid lightskyblue;
+  }
+}
+@media screen and (min-width: 700px) {
+  .logo-field {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .logo-field .name {
+    border-right: 1px solid white;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -122,6 +170,13 @@ footer {
   padding-top: 1em;
 }
 
+.container {
+  background: steelblue;
+  color: white;
+  text-align: left;
+  padding: 1em;
+}
+
 .divider {
   margin: 0.5em 0;
   display: -webkit-box;
@@ -163,7 +218,6 @@ footer {
   padding: 2em 0;
 }
 .logo-field .name {
-  border-right: 1px solid white;
   padding-right: 1em;
 }
 .logo-field .name h1 {

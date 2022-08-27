@@ -2,12 +2,8 @@
 @import "_colors.sass"
 @import "_media-queries.sass"
 
-.container
-  background: $background
-
-  color: white
-
-  padding: 1em
+html
+  scroll-behavior: smooth
 
 body
   display: flex
@@ -97,6 +93,14 @@ footer
   border-top: 1px solid $border
   padding-top: 1em
 
+.container
+  background: $background
+
+  color: white
+  text-align: left
+
+  padding: 1em
+
 .divider
   margin: .5em 0
 
@@ -137,8 +141,6 @@ footer
     padding: 2em 0
 
   .name
-    border-right: 1px solid white
-
     padding-right: 1em
 
     h1

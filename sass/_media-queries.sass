@@ -1,9 +1,36 @@
+body
+  @media screen and (max-width: $small)
+    font-size: $small-fz
+  @media screen and (min-width: $small) and (max-width: $big)
+    font-size: $medium-fz
+  @media screen and (min-width: $big)
+    font-size: $big-fz
+
 .container
-  @media (max-width: $small)
+  @media screen and (max-width: $small)
     width: $small-width
-  @media (min-width: $small) and (max-width: $big)
+  @media screen and (min-width: $small) and (max-width: $big)
     width: $medium-width
-  @media (min-width: $big)
+  @media screen and (min-width: $big)
     width: $big-width
 
-  text-align: left
+.logo-field
+  @media screen and (max-width: $small)
+    flex-direction: column
+
+    .name, .menu
+      display: flex
+      flex-direction: column
+      align-items: center
+
+    .menu
+      margin: 1em
+      padding: 1em
+
+      border-top: 1px solid $border
+
+  @media screen and (min-width: $small)
+    flex-direction: row
+
+    .name
+      border-right: 1px solid white
