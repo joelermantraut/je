@@ -42,3 +42,47 @@ Editing, Programming and Robotics.
 Leaving the merely technical,I am a member of Ágape Iglesia, an evangelical Christian church,
 where I participate in social activities and integration and development, of multiple aspects.
 
+## Projects
+
+### Electronics
+My academic degree is Electronic Engineering, as a student at the UTN, Bahía Blanca Regional Faculty. Therefore, I have developed several projects linked to this branch.
+
+#### Embedded Systems
+##### Assembler
+ - [Assembler Exercisse in PIC Microcontrollers](https://github.com/joelermantraut/ejercicios-assembler)
+
+##### Arduino
+ - [Accel](https://github.com/joelermantraut/arduino-scripts/tree/main/Accel)
+ - [Edificio Reloj](https://github.com/joelermantraut/arduino-scripts/tree/main/EdificioReloj)
+ - [Hibernadero](https://github.com/joelermantraut/arduino-scripts/tree/main/Hibernadero)
+ 
+#### STM Microcontrollers
+ - [Sistema Monitorizacion de Colmenas](https://github.com/joelermantraut/sistema_monitorizacion_colmenas)
+ - [Wattmeter](https://github.com/joelermantraut/stm32f4-wattmeter)
+ - [DDS Generator](https://github.com/joelermantraut/DDS-generator)
+ 
+### Programming
+
+Since the beginning of my career in the world of technology (starting as a high school student in the specialty of Electronic Technician, at the age of 16) I have felt a deep interest in everything related to programming. I started developing in C and Python, before seeing it formally during my degree. A couple of years later, looking for some economic income, I learned to develop WEB pages, an activity to which I dedicated myself for a while.
+
+#### Python
+
+ - [PSO-JAX](https://github.com/joelermantraut/PSO-JAX)
+ - [WhatsMatic](https://github.com/joelermantraut/whatsmatic)
+ - [Spotify Playlist Parser](https://github.com/joelermantraut/spotify-playlists-parser)
+ 
+#### Desarrollo WEB
+ - [HDJ Website](https://github.com/joelermantraut/hdj)
+ - [My Own Website](https://github.com/joelermantraut/je)
+ 
+### Computer Science
+
+Although my interest is mainly focused on Electronics and Programming, circumstances have led me to have to acquire other skills, linked to the Computer Science branch, especially those related to operating systems.
+
+#### Linux
+
+On this system, I have experience with multiple distros, especially those based on Debian, and Arch Linux.
+
+ - [Arch Linux Post Installation Script](https://github.com/joelermantraut/arch-post-installation-script)
+ - [Arch Linux Dotfiles](https://github.com/joelermantraut/dotfiles)
+ - [Arch Linux VirtualBox Installation Guide](https://github.com/joelermantraut/arch-linux-virtualbox-installation)
