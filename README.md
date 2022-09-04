@@ -47,11 +47,10 @@ where I participate in social activities and integration and development, of mul
 ### Electronics
 My academic degree is Electronic Engineering, as a student at the UTN, Bahía Blanca Regional Faculty. Therefore, I have developed several projects linked to this branch.
 
-#### Embedded Systems
-##### Assembler
+#### Assembler
  - [Assembler Exercisse in PIC Microcontrollers](https://github.com/joelermantraut/ejercicios-assembler)
 
-##### Arduino
+#### Arduino
  - [Accel](https://github.com/joelermantraut/arduino-scripts/tree/main/Accel)
  - [Edificio Reloj](https://github.com/joelermantraut/arduino-scripts/tree/main/EdificioReloj)
  - [Hibernadero](https://github.com/joelermantraut/arduino-scripts/tree/main/Hibernadero)
