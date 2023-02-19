@@ -4,8 +4,8 @@
  - Electronics Engineering Student
  - Bahía Blanca, Buenos Aires, Argentina
  - 25 years old
- - Github Profile
- - Curriculum Vitae
+ - [Github profile](https://github.com/joelermantraut)
+ - [Curriculum Vitae](https://joelermantraut.github.io/je/)
  - Christian
  
 ## What Am I?
